@@ -1,29 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Mask Cursor Effect || Abdur Rahman Adil</title>
-    <link rel="stylesheet" href="./src/style.css" />
-  </head>
-  <body class="overflow-hidden cursor-none font-sans">
-    <section class="h-screen w-full bg-black relative">
-      <!-- Background -->
-      <div class="flex items-center justify-center absolute inset-0">
-        <h1 class="font-extrabold text-6xl text-white" style="text-align:center;">
-          My name is Abdur Rahman <span class="text-blue-900">Adil</span>
-        </h1>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cursor Fancy</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-gray-900 text-white">
+  <div class="relative pb-20">
+    <!-- Main Content -->
+    <div class="content">
+      <div class="container mx-auto px-4">
+        <div class="flex flex-col justify-center items-center min-h-screen">
+          <div class="w-full md:w-10/12 lg:w-8/12 text-center">
+            <p class="text-4xl md:text-5xl font-bold">
+              My Name is Abdur Rahman Adil
+            </p>
+          </div>
+        </div>
+        <div class="flex flex-col justify-center items-center min-h-screen">
+          <div class="w-full md:w-10/12 lg:w-8/12 text-center">
+            <p class="text-4xl md:text-5xl font-bold">
+              Do not share this information with anyone
+            </p>
+          </div>
+        </div>
+        <div class="text-center mt-10">
+          <a class="inline-flex justify-center items-center p-3 bg-gray-800 hover:bg-gray-700 rounded" href="https://greensock.com/" target="_blank">
+            <span>psst discover more</span>
+            <i class="ml-2 text-2xl">→</i>
+          </a>
+        </div>
       </div>
-      <!-- mask -->
-      <div
-        class="flex items-center justify-center absolute inset-0 clip-[circle(10px_at_0%_0%)] transition-[clip-path] duration-300 ease-out bg-white masked-layer"
-      >
-        <h1 class="font-extrabold text-6xl text-black masked-content p-5" style="text-align:center;">
-          A Learner of <span class="text-blue-900">MERN</span> Stack Dev.
-        </h1>
-      </div>
-    </section>
+    </div>
 
-    <script src="./src/script.js"></script>
-  </body>
+    <!-- Hidden Content -->
+    <div class="hidden-content">
+      <div class="container mx-auto px-4">
+        <div class="flex flex-col justify-center items-center min-h-screen">
+          <div class="w-full md:w-10/12 lg:w-8/12 text-center">
+            <p class="text-4xl md:text-5xl font-bold">
+              A learner of <span>MERN</span> Stack Dev.
+            </p>
+          </div>
+        </div>
+        <div class="flex flex-col justify-center items-center min-h-screen">
+          <div class="w-full md:w-10/12 lg:w-8/12 text-center">
+          
+          </div>
+        </div>
+        <div class="text-center mt-10">
+          <div class="inline-flex justify-center items-center p-3 bg-gray-800 hover:bg-gray-700 rounded">
+            <i class="ml-2 text-2xl">→</i>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js" integrity="sha512-NcZdtrT77bJr4STcmsGAESr06BYGE8woZdSdEgqnpyqac7sugNO+Tr4bGwGF3MsnEkGKhU2KL2xh6Ec+BqsaHA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="app.js"></script>
+</body>
 </html>
